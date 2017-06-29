@@ -15,6 +15,7 @@ RUN pip install scipy
 RUN pip install numpy
 RUN pip install cmocean
 
+RUN apt-get install wget
 RUN wget http://download.osgeo.org/gdal/2.1.3/gdal-2.1.3.tar.gz -O /tmp/gdal-2.1.3.tar.gz && \
 tar -x -f /tmp/gdal-2.1.3.tar.gz -C /tmp 
 
